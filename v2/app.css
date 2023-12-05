@@ -327,6 +327,10 @@ img {
   .search-box input {
     width: 100%;
   }
+
+  #bottomNavForm input {
+    padding-left: 3.5rem;
+  }
 }
 
 /* End Responsive */
