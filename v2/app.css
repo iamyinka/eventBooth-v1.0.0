@@ -24,6 +24,24 @@ img {
   display: none;
 }
 
+/* Advert */
+
+.advert {
+  width: 100%;
+  height: 5rem;
+  background: rgb(136, 13, 30);
+  display: flex;
+  align-items: center;
+}
+
+.advert h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  width: 100%;
+}
+
+/* End Advert */
+
 /* Top Navigation */
 
 .navbar#bottomNav {
@@ -374,6 +392,111 @@ main {
 
 /* End main */
 
+/* Event */
+
+.events {
+  padding: 5rem 0;
+}
+
+.events h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.events h2 span {
+  font-family: "Mooli", sans-serif;
+  font-weight: 700;
+  color: rgb(136, 13, 30);
+}
+
+.event {
+  position: relative;
+  overflow: hidden;
+  height: 25rem;
+  width: 100%;
+  background: transparent;
+  border-radius: 0.85rem;
+}
+
+.event-banner {
+  display: inline-block;
+  width: 100%;
+}
+
+.event-banner img {
+  width: 100%;
+  max-width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.event-bg {
+  background: rgb(136, 13, 30);
+  /* z-index: -1; */
+  height: 100%;
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  border-radius: 5rem;
+  transform: rotateZ(-15deg);
+}
+
+.event-details {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  padding: 0.85rem 1.2rem;
+}
+
+.event-details h4 {
+  font-size: 0.85rem;
+  font-family: "Mooli", sans-serif;
+  letter-spacing: 0.1rem;
+  /* --pri-font: "Croissant One", serif;
+  --sec-font: "Mooli", sans-serif;
+  --misc-font: "Mukta", sans-serif; */
+}
+
+.event-time {
+  display: flex;
+  justify-content: end;
+  font-weight: 500;
+}
+
+.venue {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-family: "Mooli", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.venue::before {
+  content: "Venue:";
+  font-family: "Croissant One", serif;
+}
+
+.ticket-price {
+  width: 7rem;
+  height: 7rem;
+  background: rgba(253, 254, 253, 0.65);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: -80%;
+  right: 3%;
+  color: rgb(136, 13, 30);
+  font-weight: 700;
+  font-family: "Croissant One", serif;
+}
+
+/* End Event */
+
 /* Responsive */
 
 @media (max-width: 1200px) {
@@ -409,7 +532,7 @@ main {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .ctas h3 {
     font-size: 2rem;
   }
@@ -423,6 +546,26 @@ main {
   }
   .bottom-nav__link span {
     display: none;
+  }
+
+  .ticket-price {
+    top: -65%;
+  }
+
+  .venue::before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ticket-price {
+    top: -140%;
+  }
+
+  .event-bg {
+    top: 45%;
+    transform: rotateZ(-7deg);
+    left: -40%;
   }
 }
 
@@ -468,6 +611,18 @@ main {
 
   .ctas h3 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 473px) {
+  .ticket-price {
+    top: -100%;
+  }
+
+  .event-bg {
+    top: 45%;
+    transform: rotateZ(-7deg);
+    left: -40%;
   }
 }
 
