@@ -473,7 +473,7 @@ main {
 }
 
 .ticket-price {
-  width: 7rem;
+  min-width: 7rem;
   height: 7rem;
   background: rgba(253, 254, 253, 0.65);
   display: flex;
@@ -487,6 +487,8 @@ main {
   color: rgb(136, 13, 30);
   font-weight: 700;
   font-family: "Croissant One", serif;
+  text-align: center;
+  padding: 0 0.5rem;
 }
 
 /* End Event */
@@ -496,171 +498,6 @@ main {
 /* --pri-font: "Croissant One", serif;
   --sec-font: "Mooli", sans-serif;
   --misc-font: "Mukta", sans-serif; */
-
-.what-we-offer {
-  margin-bottom: 5rem;
-  text-transform: uppercase;
-  font-family: "Croissant One", serif;
-}
-
-.what-we-offer {
-  width: 100%;
-  min-height: 60vh;
-  position: relative;
-}
-
-.services-wrapper {
-  width: 100%;
-  box-shadow: 0.5rem 1rem 2rem rgba(10, 10, 10, 0.25);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 3rem auto;
-}
-
-.service {
-  /* width: 150rem; */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0;
-}
-
-.service h3 {
-  font-family: "Mukta", sans-serif;
-  text-transform: capitalize;
-  margin-top: 0.85rem;
-  letter-spacing: 0.1rem;
-  font-weight: 300;
-  font-size: 0.85rem;
-  display: flex;
-}
-
-.service i {
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#fff, rgb(136, 13, 30));
-  -webkit-background-clip: text;
-  color: rgb(136, 13, 30);
-  font-size: 3rem;
-}
-
-/* .services-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  box-shadow: 0.5rem 1rem 2rem rgba(10, 10, 10, 0.25);
-  padding: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.service {
-  width: 20rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 3rem;
-}
-
-.category h3 {
-  font-family: var(--pri-font);
-  text-transform: uppercase;
-  margin-top: 2rem;
-  letter-spacing: 0.1rem;
-  font-weight: 300;
-}
-
-.category .icon {
-  width: 8rem;
-  height: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#fff, var(--pri-color));
-  -webkit-background-clip: text;
-  color: var(--pri-color);
-}
-
-.category .icon .faicon {
-  font-size: 5rem;
-}
-
-.category:nth-child(2) .icon {
-  background: linear-gradient(#fff, var(--tertiary-color));
-  -webkit-background-clip: text;
-  color: var(--tertiary-color);
-}
-
-.category:nth-child(3) .icon {
-  background: linear-gradient(#fff, rgb(225, 225, 114));
-  -webkit-background-clip: text;
-  color: rgb(56, 113, 103);
-}
-
-.category:nth-child(4) .icon {
-  background: linear-gradient(#fff, rgb(225, 225, 114));
-  -webkit-background-clip: text;
-  color: rgb(54, 153, 240);
-}
-
-.category:nth-child(5) .icon {
-  background: linear-gradient(#fff, rgb(225, 225, 114));
-  -webkit-background-clip: text;
-  color: rgb(166, 48, 230);
-}
-
-.category:nth-child(6) .icon {
-  background: linear-gradient(#fff, rgb(225, 225, 114));
-  -webkit-background-clip: text;
-  color: rgb(135, 170, 186);
-}
-
-.category:nth-child(7) .icon {
-  background: linear-gradient(#fff, rgb(225, 225, 114));
-  -webkit-background-clip: text;
-  color: rgb(230, 48, 48);
-}
-
-.category:nth-child(8) .icon {
-  background: linear-gradient(#fff, rgb(225, 225, 114));
-  -webkit-background-clip: text;
-  color: rgb(230, 203, 48);
-}
-
-.cat-bg {
-  height: 40rem;
-  width: 40rem;
-  border-radius: 50%;
-  z-index: -2;
-  opacity: 0.35;
-}
-
-.cat-bg-1 {
-  background: linear-gradient(to right, var(--sec-color) 2%, #fff 80%);
-  position: absolute;
-  bottom: 15%;
-  left: 3%;
-  transform: rotateZ(-5deg) skew(10deg);
-}
-
-.cat-bg-2 {
-  background: linear-gradient(to left, var(--sec-color) 2%, #fff 80%);
-  position: absolute;
-  top: 15%;
-  right: 3%;
-  transform: rotateZ(-10deg) skew(-10deg);
-} */
-
-/* End What we offer */
 
 /* Responsive */
 
@@ -684,21 +521,6 @@ main {
   .navbar #navBurger i {
     display: inline-block;
     font-size: 2rem;
-  }
-
-  .services-wrapper {
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    padding: 1.2rem 1.5rem;
-    background: #f1f1f1;
-  }
-
-  .service:nth-child(1) {
-    margin-left: 20rem;
-  }
-
-  .service {
-    margin: 0 2rem;
   }
 }
 
@@ -735,10 +557,6 @@ main {
   .venue::before {
     display: none;
   }
-
-  .service:nth-child(1) {
-    margin-left: 30rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -750,10 +568,6 @@ main {
     top: 45%;
     transform: rotateZ(-7deg);
     left: -40%;
-  }
-
-  .service:nth-child(1) {
-    margin-left: 40rem;
   }
 }
 
@@ -811,10 +625,6 @@ main {
     top: 45%;
     transform: rotateZ(-7deg);
     left: -40%;
-  }
-
-  .service:nth-child(1) {
-    margin-left: 50rem;
   }
 }
 
