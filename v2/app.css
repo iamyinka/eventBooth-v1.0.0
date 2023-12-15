@@ -628,10 +628,16 @@ img {
 /* --pri-font: "Croissant One", serif;
   --sec-font: "Mooli", sans-serif;
   --misc-font: "Mukta", sans-serif; */
-
+.btn-primary {
+  background-color: rgb(136, 13, 30);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: rgb(107, 12, 25);
+}
 /* Start Footer */
 footer {
-  background-color: rgb(136, 13, 30)
+  background-color: rgb(136, 13, 30);
 }
 
 footer .line {
