@@ -604,17 +604,16 @@ img {
   outline: 0px;
   box-shadow: unset;
 }
-.contact textarea {
-  height: 200px;
-}
-
-.contact i {
-  font-size: 30px;
-  color: rgb(136, 13, 30);;
-  margin-right: 10px;
+.contact .btn {
+  background: rgb(136, 13, 30);
+  color: #fff;
 }
 
 /* Contact Page End*/
+
+/* Login Page Starts*/
+
+/* Login Page End*/
 
 /* Terms Start  */
 .terms h5 {
