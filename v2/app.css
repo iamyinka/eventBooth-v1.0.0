@@ -598,6 +598,24 @@ img {
 }
 /* End About Page */
 
+/* Contact Page */
+.contact .form-control:focus {
+  border-color: rgb(136, 13, 30);
+  outline: 0px;
+  box-shadow: unset;
+}
+.contact textarea {
+  height: 200px;
+}
+
+.contact i {
+  font-size: 30px;
+  color: rgb(136, 13, 30);;
+  margin-right: 10px;
+}
+
+/* Contact Page End*/
+
 /* --pri-font: "Croissant One", serif;
   --sec-font: "Mooli", sans-serif;
   --misc-font: "Mukta", sans-serif; */
