@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eventbooth w/Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=Mukta:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="advert">
+        <div class="container">
+            <h4 class="display-6">
+                <marquee behavior="" direction="">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                        tempore placeat eos eveniet minus laborum necessitatibus aspernatur corrupti consectetur
+                        odio.</span>
+                </marquee>
+            </h4>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="topNav">
+        <div class="container">
+            <div class="main-nav">
+                <div class="logo">
+                    <img src="https://www.eventbooth.ng/wp-content/uploads/2023/07/EVENT-BOOTH-e1688563148798.png"
+                        alt="">
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link">Browse Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="planners-hub.html" class="nav-link">Planners Hub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Help</a>
+                        <div class="dropdown help-dropdown">
+                            <a href="faqs.html">FAQs</a>
+                            <a href="#">Confirm tickets</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">My Account</a>
+                        <div class="dropdown acct-dropdown">
+                            <form action="#">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit">Log In</button>
+                                <p>Not registered? <a href="#">Get Started</a></p>
+                            </form>
+                        </div>
+                    </li>
+                    <span id="navBurger" class="nav-item">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container faq">
+<section class=" py-3 py-md-5 py-xl-8">
+  <div>
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <h2 class="display-5 text-center">Frequently Asked Questions</h2>
+      </div>
+    </div>
+  </div>
+<div class="row">
+  <!-- FAQs: General -->
+  <div class="mb-8 col-md-6">
+    <div>
+      <div class="row justify-content-center">
+        <div class="col-11 col-xl-10">
+          <div class="d-flex align-items-end mt-5">
+            <i class="bi bi-person-gear me-3 lh-1 display-5"></i>
+            <h3 class="m-0">General</h3>
+          </div>
+        </div>
+        <div class="col-11 col-xl-10">
+          <div class="accordion accordion-flush" id="faqAccount">
+            <div class="accordion-item bg-transparent border-top border-bottom py-3">
+              <h2 class="accordion-header" id="faqAccountHeading1">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse1" aria-expanded="false" aria-controls="faqAccountCollapse1">
+                    What is EventBooth?
+                </button>
+              </h2>
+              <div id="faqAccountCollapse1" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading1">
+                <div class="accordion-body">
+                  <p>EventBooth is a comprehensive event management solution that empowers event organizers, vendors, and attendees to seamlessly plan, promote, and experience events of all types.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqAccountHeading2">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse2" aria-expanded="false" aria-controls="faqAccountCollapse2">
+                    How does EventBooth work?
+                </button>
+              </h2>
+              <div id="faqAccountCollapse2" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading2">
+                <div class="accordion-body">
+                  <p>EventBooth provides a user-friendly platform where event organizers can list events, sell tickets, manage event merchandise, and engage with vendors. Attendees can discover, purchase tickets, and seamlessly validate their entry using QR codes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqAccountHeading3">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse3" aria-expanded="false" aria-controls="faqAccountCollapse3">
+                    What are the key features of EventBooth?
+                </button>
+              </h2>
+              <div id="faqAccountCollapse3" class="accordion-collapse collapse" aria-labelledby="faqAccountHeading3">
+                <div class="accordion-body">
+                  <p>EventBooth offers event listing, ticket sales and validation, event merchandise sale and vendor listing features. It streamlines the entire event lifecycle, from planning to execution.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQs: Event Organizers -->
+  <div class="mb-8 col-md-6">
+    <div>
+      <div class="row justify-content-center">
+        <div class="col-11 col-xl-10">
+          <div class="d-flex align-items-end mt-5">
+            <i class="bi bi-cart-plus me-3 lh-1 display-5"></i>
+            <h3 class="m-0">Event Organizers</h3>
+          </div>
+        </div>
+        <div class="col-11 col-xl-10">
+          <div class="accordion accordion-flush" id="faqOrder">
+            <div class="accordion-item bg-transparent border-top border-bottom py-3">
+              <h2 class="accordion-header" id="faqOrderHeading1">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse1" aria-expanded="false" aria-controls="faqOrderCollapse1">
+                    How do I list my event on EventBooth?
+                </button>
+              </h2>
+              <div id="faqOrderCollapse1" class="accordion-collapse collapse" aria-labelledby="faqOrderHeading1">
+                <div class="accordion-body">
+                  <p>Listing your event is easy! Simply create a vendor account, provide event details, upload multimedia content, and set ticket options.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqOrderHeading2">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse2" aria-expanded="false" aria-controls="faqOrderCollapse2">
+                    Can I customize ticket pricing and types?
+                </button>
+              </h2>
+              <div id="faqOrderCollapse2" class="accordion-collapse collapse" aria-labelledby="faqOrderHeading2">
+                <div class="accordion-body">
+                  <p>Yes, you have full control over ticket pricing, types, and availability. You can create different ticket tiers to cater to various attendee preferences.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqOrderHeading3">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse3" aria-expanded="false" aria-controls="faqOrderCollapse3">
+                    How does event validation work?
+                </button>
+              </h2>
+              <div id="faqOrderCollapse3" class="accordion-collapse collapse" aria-labelledby="faqOrderHeading3">
+                <div class="accordion-body">
+                  <p>We use QR code technology for event validation. Attendees present their QR codes at the event entrance for quick and secure validation.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqOrderHeading4">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse4" aria-expanded="false" aria-controls="faqOrderCollapse4">
+                    Can I track attendee data and behavior?
+                </button>
+              </h2>
+              <div id="faqOrderCollapse4" class="accordion-collapse collapse" aria-labelledby="faqOrderHeading4">
+                <div class="accordion-body">
+                  <p>EventBooth provides real-time analytics and insights into attendee behavior, helping you optimize event strategies.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqOrderHeading5">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqOrderCollapse5" aria-expanded="false" aria-controls="faqOrderCollapse5">
+                    How much is EventBooth commission on ticket sales?
+                </button>
+              </h2>
+              <div id="faqOrderCollapse5" class="accordion-collapse collapse" aria-labelledby="faqOrderHeading5">
+                <div class="accordion-body">
+                  <p>EventBooth gets a 5.5% commission on per sales made by evet organizers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQs: Attendees -->
+  <div class="mb-0 col-md-6">
+    <div>
+      <div class="row justify-content-center">
+        <div class="col-11 col-xl-10">
+          <div class="d-flex align-items-end mt-5">
+            <i class="bi bi-bag-dash me-3 lh-1 display-5"></i>
+            <h3 class="m-0">Attendees FAQs</h3>
+          </div>
+        </div>
+        <div class="col-11 col-xl-10">
+          <div class="accordion accordion-flush" id="faqRefund">
+            <div class="accordion-item bg-transparent border-top border-bottom py-3">
+              <h2 class="accordion-header" id="faqRefundHeading1">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse1" aria-expanded="false" aria-controls="faqRefundCollapse1">
+                    How do I buy tickets for an event?
+                </button>
+              </h2>
+              <div id="faqRefundCollapse1" class="accordion-collapse collapse" aria-labelledby="faqRefundHeading1">
+                <div class="accordion-body">
+                  <p>Finding and purchasing tickets is simple. Browse events, select your preferred tickets, and proceed to checkout securely.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqRefundHeading2">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse2" aria-expanded="false" aria-controls="faqRefundCollapse2">
+                    How do I access my purchased tickets?
+                </button>
+              </h2>
+              <div id="faqRefundCollapse2" class="accordion-collapse collapse" aria-labelledby="faqRefundHeading2">
+                <div class="accordion-body">
+                  <p>After purchasing, you’ll receive an email with your e-tickets and QR codes. You can also access your tickets in your EventBooth account.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqRefundHeading3">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse3" aria-expanded="false" aria-controls="faqRefundCollapse3">
+                    How do I validate my event entry?
+                </button>
+              </h2>
+              <div id="faqRefundCollapse3" class="accordion-collapse collapse" aria-labelledby="faqRefundHeading3">
+                <div class="accordion-body">
+                  <p>Show your QR code at the event entrance, and our seamless validation system will ensure quick and hassle-free entry.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- FAQs: Vendors -->
+ <div class="mb-0 col-md-6">
+    <div>
+      <div class="row justify-content-center">
+        <div class="col-11 col-xl-10">
+          <div class="d-flex align-items-end mt-5">
+            <i class="bi bi-bag-dash me-3 lh-1 display-5"></i>
+            <h3 class="m-0">Vendors FAQs</h3>
+          </div>
+        </div>
+        <div class="col-11 col-xl-10">
+          <div class="accordion accordion-flush" id="faqRefund">
+            <div class="accordion-item bg-transparent border-top border-bottom py-3">
+              <h2 class="accordion-header" id="faqRefundHeading1">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse1" aria-expanded="false" aria-controls="faqRefundCollapse1">
+                    How can I showcase my products on EventBooth?
+                </button>
+              </h2>
+              <div id="faqRefundCollapse1" class="accordion-collapse collapse" aria-labelledby="faqRefundHeading1">
+                <div class="accordion-body">
+                  <p>Vendors can create profiles, upload product images, descriptions, and engage with event organizers looking for services like yours.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqRefundHeading2">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse2" aria-expanded="false" aria-controls="faqRefundCollapse2">
+                    How do I connect with event organizers?
+                </button>
+              </h2>
+              <div id="faqRefundCollapse2" class="accordion-collapse collapse" aria-labelledby="faqRefundHeading2">
+                <div class="accordion-body">
+                  <p>Our platform facilitates direct communication between vendors and event organizers, making collaboration and engagement easy.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqRefundHeading3">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse3" aria-expanded="false" aria-controls="faqRefundCollapse3">
+                    Can I track my sales and engagement on the platform?
+                </button>
+              </h2>
+              <div id="faqRefundCollapse3" class="accordion-collapse collapse" aria-labelledby="faqRefundHeading3">
+                <div class="accordion-body">
+                  <p>Yes, EventBooth provides insights into your product engagement and sales performance, helping you tailor your offerings to the market.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- FAQs: Technical FAQs -->
+   <div class="mb-0 col-md-6">
+    <div>
+      <div class="row justify-content-center">
+        <div class="col-11 col-xl-10">
+          <div class="d-flex align-items-end mt-5">
+            <i class="bi bi-bag-dash me-3 lh-1 display-5"></i>
+            <h3 class="m-0">Technical FAQs</h3>
+          </div>
+        </div>
+        <div class="col-11 col-xl-10">
+          <div class="accordion accordion-flush" id="faqRefund">
+            <div class="accordion-item bg-transparent border-top border-bottom py-3">
+              <h2 class="accordion-header" id="faqRefundHeading1">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse1" aria-expanded="false" aria-controls="faqRefundCollapse1">
+                    Is EventBooth secure for online transactions?
+                </button>
+              </h2>
+              <div id="faqRefundCollapse1" class="accordion-collapse collapse" aria-labelledby="faqRefundHeading1">
+                <div class="accordion-body">
+                  <p>Yes, we prioritize security. We use industry-standard encryption and secure payment gateways for all transactions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqRefundHeading2">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse2" aria-expanded="false" aria-controls="faqRefundCollapse2">
+                    Is the platform mobile-friendly?
+                </button>
+              </h2>
+              <div id="faqRefundCollapse2" class="accordion-collapse collapse" aria-labelledby="faqRefundHeading2">
+                <div class="accordion-body">
+                  <p>EventBooth is optimized for both desktop and mobile devices, ensuring a seamless experience for all users.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-bottom py-3">
+              <h2 class="accordion-header" id="faqRefundHeading3">
+                <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqRefundCollapse3" aria-expanded="false" aria-controls="faqRefundCollapse3">
+                    What if I encounter technical issues?
+                </button>
+              </h2>
+              <div id="faqRefundCollapse3" class="accordion-collapse collapse" aria-labelledby="faqRefundHeading3">
+                <div class="accordion-body">
+                  <p>Our dedicated support team is available to assist you. Contact us through our support channels, and we’ll promptly address your concerns.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+    </main>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom" id="bottomNav">
+        <div class="container d-flex justify-content-center">
+            <form role="search" id="bottomNavForm">
+                <input class="form-control" type="search" placeholder="Fine Events" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
+            </form>
+
+            <div class="bottom-nav">
+                <a href="/" class="bottom-nav__link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="events.html" class="bottom-nav__link">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span>Browse Events</span>
+                </a>
+                <a href="#" class="bottom-nav__link">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Create Event</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Footer -->
+    <footer class=" text-center text-lg-start text-white py-2">
+        <!-- Section: Social media -->
+        <section class="container">
+            <div class=" text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                        <h6 class="text-uppercase fw-bold">Company name</h6>
+                        <hr class="mb-4 mt-0 d-inline-block" style="width: 60px; height: 2px" />
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                        <div>
+                            <p>Get connected with us on social networks:</p>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Products</h6>
+                        <hr class="mb-4 mt-0 d-inline-block" style="width: 60px; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white">Events</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Ticketing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Shows</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Fun</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block line" />
+                        <p>
+                            <a href="about.html" class="text-white">About Us</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="text-white">Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="planners-hub.html." class="text-white">Planner's Hub</a>
+                        </p>
+                        <p>
+                            <a href="register.html" class="text-white">Get Started</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block line" />
+                        <p><i class="fas fa-home mr-3"></i> Lagos, Nigeria</p>
+                        <p><i class="fas fa-envelope mr-3"></i> nigeria@eventgroupbooth.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> +353 858 090 416</p>
+                        <p><i class="fas fa-print mr-3"></i> +234 813 600 1628</p>
+                    </div>
+                </div>
+                <p class="text-center">
+                    © 2023 Copyright:
+                    <a class="text-white" href="">Yinka Ash</a>
+                </p>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://unpkg.com/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -604,17 +604,17 @@ img {
   outline: 0px;
   box-shadow: unset;
 }
-.contact textarea {
-  height: 200px;
+.contact .btn {
+  background: rgb(136, 13, 30);
+  color: #fff;
 }
-
-.contact i {
-  font-size: 30px;
-  color: rgb(136, 13, 30);;
-  margin-right: 10px;
-}
-
 /* Contact Page End*/
+
+/* FAQ Page Starts*/
+.faq .link-primary {
+  color: rgb(136, 13, 30) !important;
+}
+/* FAQ Page End*/
 
 /* Terms Start  */
 .terms h5 {
@@ -628,10 +628,16 @@ img {
 /* --pri-font: "Croissant One", serif;
   --sec-font: "Mooli", sans-serif;
   --misc-font: "Mukta", sans-serif; */
-
+.btn-primary {
+  background-color: rgb(136, 13, 30);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: rgb(107, 12, 25);
+}
 /* Start Footer */
 footer {
-  background-color: rgb(136, 13, 30)
+  background-color: rgb(136, 13, 30);
 }
 
 footer .line {
