@@ -317,7 +317,7 @@ img {
   z-index: -1;
 } */
 
-main {
+.hero-section {
   height: 50vh;
 }
 
@@ -547,6 +547,56 @@ main {
 }
 
 /* End What We Offer */
+
+/* About Page */
+/* What We Do Section */
+.about .seperator {
+  margin-bottom: 30px;
+  width: 35px;
+  height: 3px;
+  background: #772432;
+  border: none;
+}
+
+.about .title .seperator {
+  margin: 0 auto 10px;
+}
+
+.about  .item-in {
+  background: #f5f5f5;
+  padding: 30px;
+  position: relative;
+  height: 320px;
+  margin-bottom: 20px;
+}
+.about .item-in:hover:before {
+  width: 100%;
+}
+.about .item-in::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 0%;
+  background: #772432;
+  right: 0px;
+  transition: width 0.4s;
+}
+
+.about .item h4 {
+  font-size: 18px;
+  margin-top: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about .item a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #772432;
+  margin-top: 10px;
+}
+/* End About Page */
 
 /* --pri-font: "Croissant One", serif;
   --sec-font: "Mooli", sans-serif;
