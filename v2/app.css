@@ -616,6 +616,15 @@ img {
 
 /* Contact Page End*/
 
+/* Terms Start  */
+.terms h5 {
+  font-size: 18px;
+}
+.terms li {
+  list-style: circle !important;
+}
+/* Terms End */
+
 /* --pri-font: "Croissant One", serif;
   --sec-font: "Mooli", sans-serif;
   --misc-font: "Mukta", sans-serif; */
