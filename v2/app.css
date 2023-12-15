@@ -608,12 +608,13 @@ img {
   background: rgb(136, 13, 30);
   color: #fff;
 }
-
 /* Contact Page End*/
 
-/* Login Page Starts*/
-
-/* Login Page End*/
+/* FAQ Page Starts*/
+.faq .link-primary {
+  color: rgb(136, 13, 30) !important;
+}
+/* FAQ Page End*/
 
 /* Terms Start  */
 .terms h5 {
