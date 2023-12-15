@@ -14,8 +14,13 @@ body {
   /* min-height: 200vh; */
 }
 
+li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -498,6 +503,44 @@ main {
 /* End Event */
 
 /* What we offer */
+.what-we-offer h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-family: "Croissant One", serif;
+}
+.what-we-offer h2 span {
+  color: rgb(136, 13, 30);
+}
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card .card-icon {
+  background-color: hsl(146, 41%, 97%);
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.service-card .card-icon ion-icon {
+  font-size: 18px;
+  color: rgb(136, 13, 30);
+  --ionicon-stroke-width: 45px;
+}
+
+.service-card .card-title {
+  margin-block: 25px 12px;
+}
+
+.service-card .card-text {
+  line-height: 1.6;
+}
+
+/* End What We Offer */
 
 /* --pri-font: "Croissant One", serif;
   --sec-font: "Mooli", sans-serif;
@@ -584,6 +627,9 @@ footer .line {
     top: 45%;
     transform: rotateZ(-7deg);
     left: -40%;
+  }
+  .service-list {
+    grid-template-columns: 1fr;
   }
 }
 
