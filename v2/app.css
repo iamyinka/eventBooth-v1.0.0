@@ -17,6 +17,7 @@ body {
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
 }
@@ -502,15 +503,17 @@ main {
   --sec-font: "Mooli", sans-serif;
   --misc-font: "Mukta", sans-serif; */
 
-  /* Start Footer */
-  footer {
-background-color: rgb(136, 13, 30)
-  }
- footer .line {
+/* Start Footer */
+footer {
+  background-color: rgb(136, 13, 30)
+}
+
+footer .line {
   width: 60px;
   height: 2px
- }
-  /* End Footer */
+}
+
+/* End Footer */
 /* Responsive */
 
 @media (max-width: 1200px) {
@@ -558,6 +561,7 @@ background-color: rgb(136, 13, 30)
   .search-box {
     width: 80%;
   }
+
   .bottom-nav__link span {
     display: none;
   }
@@ -599,6 +603,7 @@ background-color: rgb(136, 13, 30)
   #bottomNavForm {
     padding: 0;
   }
+
   .bottom-nav-wrapper {
     justify-content: center;
   }
