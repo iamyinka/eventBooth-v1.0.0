@@ -378,8 +378,8 @@ div.text-muted{
     cursor: pointer;
 }
 .submit-btn {
-    border: 1px solid #0e9594;
-    background-color: #0e9594;
+    border: 1px solid rgb(242, 106, 141);
+    background-color: rgb(242, 106, 141);
 }
 .mt-3 {
     margin-top: 2rem;
@@ -453,7 +453,7 @@ ul.form-stepper > li:not(:last-of-type) {
     background-color: #dee2e6;
 }
 .form-stepper-horizontal li.form-stepper-completed:after {
-    background-color: #4da3ff;
+    background-color: rgb(242, 106, 141);
 }
 .form-stepper-horizontal li:last-child {
     flex: unset;
@@ -469,28 +469,28 @@ ul.form-stepper li a .form-stepper-circle {
     border-radius: 50%;
 }
 .form-stepper .form-stepper-active .form-stepper-circle {
-    background-color: rgb(136, 13, 30) !important;
+    background-color: #afafaf !important;
     color: #fff;
 }
 .form-stepper .form-stepper-active .label {
-    color: rgb(136, 13, 30) !important;
+    color: #afafaf !important;
 }
 .form-stepper .form-stepper-active .form-stepper-circle:hover {
-    background-color: rgb(136, 13, 30) !important;
+    background-color: #afafaf !important;
     color: #fff !important;
 }
 .form-stepper .form-stepper-unfinished .form-stepper-circle {
     background-color: #f8f7ff;
 }
 .form-stepper .form-stepper-completed .form-stepper-circle {
-    background-color: #0e9594 !important;
+    background-color: rgb(136, 13, 30) !important;
     color: #fff;
 }
 .form-stepper .form-stepper-completed .label {
-    color: #0e9594 !important;
+    color: rgb(136, 13, 30) !important;
 }
 .form-stepper .form-stepper-completed .form-stepper-circle:hover {
-    background-color: #0e9594 !important;
+    background-color: rgb(136, 13, 30) !important;
     color: #fff !important;
 }
 .form-stepper .form-stepper-active span.text-muted {
