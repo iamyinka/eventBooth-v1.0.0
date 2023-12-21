@@ -84,3 +84,24 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
       navigateToFormStep(stepNumber);
   });
 });
+
+// Confirm Forgot Password
+function showConfirmResetAlert() {
+  Swal.fire({
+    title: 'Are you sure you want to reset your password?',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    textColor: '#fff',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Password Reset Activated!',
+        'Pls, check your mail for a reset link.',
+        'success'
+      )
+    }
+  })
+}

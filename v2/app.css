@@ -885,3 +885,8 @@ footer .line {
 }
 
 /* End Responsive */
+
+.swal2-popup {
+  color: #fff !important;
+  text-align: center !important;
+}
