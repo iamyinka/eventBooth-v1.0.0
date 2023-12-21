@@ -638,7 +638,16 @@ label {
   list-style: circle !important;
 }
 /* Terms End */
+.o-btn {
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 18px;
+  transition: all .5s ease-in-out;
+}
 
+.o-btn:hover {
+  color: rgb(136, 13, 30);
+}
 /* --pri-font: "Croissant One", serif;
   --sec-font: "Mooli", sans-serif;
   --misc-font: "Mukta", sans-serif; */
