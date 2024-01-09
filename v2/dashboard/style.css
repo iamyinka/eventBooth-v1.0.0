@@ -846,3 +846,7 @@ ul.form-stepper li a .form-stepper-circle {
 .text-right {
     text-align: right;
 }
+
+label {
+    display: unset;
+}
