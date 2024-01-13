@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eventbooth w/Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=Mukta:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+       <div class="advert">
+        <div class="container">
+            <h4 class="display-6">
+                <marquee behavior="" direction="">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+                        tempore placeat eos eveniet minus laborum necessitatibus aspernatur corrupti consectetur
+                        odio.</span>
+                </marquee>
+            </h4>
+        </div>
+    </div>
+
+ <div id="responsiveNav">
+        <ul class="responsiveNav__navbar">
+            <li class="responsiveNav__navbar--items">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="responsiveNav__navbar--items">
+                <a href="events.html">Browse Events</a>
+            </li>
+            <li class="responsiveNav__navbar--items">
+                <a href="about.html">About</a>
+            </li>
+            <li class="responsiveNav__navbar--items">
+                <a href="planners-hub.html">Planners Hub</a>
+            </li>
+            <li class="responsiveNav__navbar--items">
+                <a href="faqs.html">FAQs</a>
+            </li>
+            <li class="responsiveNav__navbar--items">
+                <a href="contact.html">Contact Us</a>
+            </li>
+            <li class="responsiveNav__navbar--items">
+                <a href="login.html">Log In</a>
+            </li>
+        </ul>
+    </div>
+    <a href="#" id="closeResponsiveNav">
+        <i class="fa-solid fa-xmark"></i>
+    </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="topNav">
+        <div class="container">
+            <div class="main-nav">
+                <div class="logo">
+                    <img src="https://www.eventbooth.ng/wp-content/uploads/2023/07/EVENT-BOOTH-e1688563148798.png"
+                        alt="">
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link">Browse Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="planners-hub.html" class="nav-link">Planners Hub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Help</a>
+                        <div class="dropdown help-dropdown">
+                            <a href="faqs.html">FAQs</a>
+                            <a href="#">Confirm tickets</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">My Account</a>
+                        <div class="dropdown acct-dropdown">
+                            <form action="#">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit">Log In</button>
+                                <p>Not registered? <a href="register.html">Get Started</a></p>
+                            </form>
+                        </div>
+                    </li>
+                    <span id="navBurger" class="nav-item">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom" id="bottomNav">
+        <div class="container d-flex justify-content-center">
+            <form role="search" id="bottomNavForm">
+                <input class="form-control" type="search" placeholder="Fine Events" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
+            </form>
+
+            <div class="bottom-nav">
+                <a href="./index.html" class="bottom-nav__link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="events.html" class="bottom-nav__link">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <span>Browse Events</span>
+                </a>
+                <a href="./index.html" class="bottom-nav__link">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Create Event</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <section class=" grid-system">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="all-event-posts">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="event-post">
+                          <div class="event-thumb">
+                            <img src="https://www.eventbooth.ie/wp-content/uploads/2024/01/inbound1176049965867931643-AfricaHistory-MonthIreland-2048x1448.jpg" alt="">
+                          </div>
+                          <div class="down-content">
+                            <span>Corporate</span>
+                            <a href="post-details.html"><h4>International Women’s Day 2024
+                            </h4></a>
+                            <ul class="post-info">
+                              <li><a href="#">4:00 pm - 11:00 pm (Europe/Dublin)</a></li>
+                              <li><a href="#">March 16, 2024</a></li>
+                              <li><a href="#">Cavan Crystal Hotel County Cavan</a></li>
+                            </ul>
+                            <div class="info-container">
+                                <p>We are delighted to extend an invitation to you for the International Women’s Day Celebration, taking place on March 16, 2024, at the CAVAN Crystal Hotel starting at 6:00 PM.</p>
+                                <h6>The International Women’s Day 2024 theme is #inspireinclusion (Inspire Inclusion).</h6>
+                                <h6>Topic theme: ‘Digit All Innovation and technology for gender equality’</h6>
+                                <p>This year, we are proudly dedicating the event to the celebration of African Caribbean Women in Diaspora.</p>
+                                <h6>Highlight: “The Future: Illuminating Africa’s Past, Present & Future Through History, Art, Culture, and Exhibition”</h6>
+                                <p>As we come together to honor International Women’s Day, we recognize the invaluable contributions of African Caribbean women who have significantly impacted communities across the globe. This event aims to celebrate their achievements, resilience, and the rich cultural tapestry they bring to our society.</p>
+                                <p>Join us for an evening filled with inspiration, empowerment, and cultural exchange. Your presence will contribute to making this celebration even more meaningful. Together, let us acknowledge and appreciate the strength and diversity of African Caribbean women in diaspora.</p>
+                            </div>
+                            <div class="post-options">
+                              <div class="row">
+                                <div class="col-6">
+                                  <ul class="post-tags">
+                                    <li><i class="fa fa-tags"></i></li>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Event</a></li>
+                                  </ul>
+                                </div>
+                                <div class="col-6">
+                                  <ul class="post-share">
+                                    <li><i class="fa fa-share-alt"></i></li>
+                                    <li><a href="#">Facebook</a>,</li>
+                                    <li><a href="#"> X</a>,</li>
+                                    <li><a href="#"> Instagram</a>,</li>
+                                    <li><a href="#"> Whatsapp</a>,</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="sidebar">
+                    <div class="row">
+                        <div class="col-lg-12">
+                              <strong>Reg. Deadline : March 17, 2024 12:00 pm</strong>
+                          </div>
+                      <div class="col-lg-12">
+                        <div class="sidebar-item recent-posts">
+                          <div class="sidebar-heading">
+                            <h2>Get Ticket</h2>
+                          </div>
+                          <div class="content">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="sidebar-item categories">
+                          <div class="sidebar-heading">
+                            <h2>Total Purchased Tickets</h2>
+                          </div>
+                          <div class="content">
+                            <ul class="d-flex justify-content-between">
+                                <div>
+                                    <h6>Quantity</h6>
+                                    <li><a href="#">Nature Lifestyle</a></li>
+                                </div>
+                                <div>
+                                    <h6>Price</h6>
+                                    <li><a href="#">Nature Lifestyle</a></li>
+                                </div>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="sidebar-item tags">
+                          <div class="sidebar-heading">
+                            <h2>Add Event To Calender</h2>
+                          </div>
+                          <div class="content">
+                            <ul>
+                              <li><a href="#">Google</a></li>
+                              <li><a href="#">Yahoo</a></li>
+                              <li><a href="#">Outlook</a></li>
+                              <li><a href="#">Apple</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class=" text-center text-lg-start text-white py-2">
+        <!-- Section: Social media -->
+        <section class="container">
+            <div class=" text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                        <h6 class="text-uppercase fw-bold">Company name</h6>
+                        <hr class="mb-4 mt-0 d-inline-block" style="width: 60px; height: 2px" />
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                        <div>
+                            <p>Get connected with us on social networks:</p>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="" class="text-white me-4">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Products</h6>
+                        <hr class="mb-4 mt-0 d-inline-block" style="width: 60px; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white">Events</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Ticketing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Shows</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Fun</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block line" />
+                        <p>
+                            <a href="about.html" class="text-white">About Us</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="text-white">Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="planners-hub.html." class="text-white">Planner's Hub</a>
+                        </p>
+                        <p>
+                            <a href="register.html" class="text-white">Get Started</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block line" />
+                        <p><i class="fas fa-home mr-3"></i> Lagos, Nigeria</p>
+                        <p><i class="fas fa-envelope mr-3"></i> nigeria@eventgroupbooth.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> +353 858 090 416</p>
+                        <p><i class="fas fa-print mr-3"></i> +234 813 600 1628</p>
+                    </div>
+                </div>
+                <p class="text-center">
+                    © 2023 Copyright:
+                    <a class="text-white" href="">Yinka Ash</a>
+                </p>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
