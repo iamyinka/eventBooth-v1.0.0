@@ -48,3 +48,43 @@ closeResponsiveNav.addEventListener("click", function () {
   body.classList.remove("reduceBodyHeight");
   bottomNav.style.display = "flex";
 });
+
+
+// Event Details
+var items = document.querySelectorAll('.item');
+var totalQuantityElement = document.getElementById('totalQuantity');
+var totalPriceElement = document.getElementById('totalPrice');
+var totalQuantity = 0;
+var totalPrice = 0;
+
+items.forEach(function (item) {
+    var quantityElement = item.querySelector('.quantity .value');
+    var priceElement = item.querySelector('.sub-total');
+    var pricePerTicket = parseFloat(item.querySelector('.price').innerText.split('$')[1]);
+
+    item.querySelector('button:first-child').addEventListener('click', function () {
+        updateQuantityAndPrice('-', parseInt(quantityElement.innerText), pricePerTicket);
+    });
+
+    item.querySelector('button:last-child').addEventListener('click', function () {
+        updateQuantityAndPrice('+', parseInt(quantityElement.innerText), pricePerTicket);
+    });
+});
+
+function updateQuantityAndPrice(operator, itemQuantity, itemPrice) {
+    if (operator === '-' && itemQuantity > 0) {
+        totalQuantity--;
+        totalPrice -= itemPrice;
+    } else if (operator === '+') {
+        totalQuantity++;
+        totalPrice += itemPrice;
+    }
+
+    totalQuantityElement.innerText = totalQuantity;
+    totalPriceElement.innerText = '$' + totalPrice;
+}
+
+function buyNow() {
+    alert('Buying now! Total Quantity: ' + totalQuantity + ', Total Price: $' + totalPrice);
+    // You can add additional logic for purchasing here
+}
