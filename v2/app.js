@@ -54,37 +54,55 @@ closeResponsiveNav.addEventListener("click", function () {
 var items = document.querySelectorAll('.item');
 var totalQuantityElement = document.getElementById('totalQuantity');
 var totalPriceElement = document.getElementById('totalPrice');
+
 var totalQuantity = 0;
 var totalPrice = 0;
 
-items.forEach(function (item) {
+items.forEach(function(item) {
+    var itemId = item.getAttribute('data-item-id');
     var quantityElement = item.querySelector('.quantity .value');
-    var priceElement = item.querySelector('.sub-total');
-    var pricePerTicket = parseFloat(item.querySelector('.price').innerText.split('$')[1]);
+    var subTotalElement = item.querySelector('.sub-total');
+    var pricePerTicket = parseFloat(item.querySelector('.price').innerText.split('€')[1]);
 
-    item.querySelector('button:first-child').addEventListener('click', function () {
-        updateQuantityAndPrice('-', parseInt(quantityElement.innerText), pricePerTicket);
+    item.querySelector('button:first-child').addEventListener('click', function() {
+        updateQuantity(itemId, '-', pricePerTicket);
     });
 
-    item.querySelector('button:last-child').addEventListener('click', function () {
-        updateQuantityAndPrice('+', parseInt(quantityElement.innerText), pricePerTicket);
+    item.querySelector('button:last-child').addEventListener('click', function() {
+        updateQuantity(itemId, '+', pricePerTicket);
     });
-});
 
-function updateQuantityAndPrice(operator, itemQuantity, itemPrice) {
-    if (operator === '-' && itemQuantity > 0) {
-        totalQuantity--;
-        totalPrice -= itemPrice;
-    } else if (operator === '+') {
-        totalQuantity++;
-        totalPrice += itemPrice;
+    function updateQuantity(itemId, operator, price) {
+        var currentQuantity = parseInt(quantityElement.innerText);
+
+        if (operator === '-' && currentQuantity > 1) {
+            currentQuantity--;
+        } else if (operator === '+') {
+            currentQuantity++;
+        }
+
+        quantityElement.innerText = currentQuantity;
+        updateSubTotal(price, currentQuantity);
+        updateTotal();
     }
 
-    totalQuantityElement.innerText = totalQuantity;
-    totalPriceElement.innerText = '$' + totalPrice;
-}
+    function updateSubTotal(price, quantity) {
+        var subTotal = price * quantity;
+        subTotalElement.innerText = '€' + subTotal;
+    }
 
-function buyNow() {
-    alert('Buying now! Total Quantity: ' + totalQuantity + ', Total Price: $' + totalPrice);
-    // You can add additional logic for purchasing here
-}
+    function updateTotal() {
+        totalQuantity = 0;
+        totalPrice = 0;
+
+        items.forEach(function(item) {
+            var quantity = parseInt(item.querySelector('.quantity .value').innerText);
+            var price = parseFloat(item.querySelector('.price').innerText.split('€')[1]);
+            totalQuantity += quantity;
+            totalPrice += quantity * price;
+        });
+
+        totalQuantityElement.innerText = totalQuantity;
+        totalPriceElement.innerText = '€' + totalPrice;
+    }
+});
