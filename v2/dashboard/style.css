@@ -850,3 +850,7 @@ ul.form-stepper li a .form-stepper-circle {
 label {
     display: unset;
 }
+
+.dropdown-menu {
+    left: 20px !important;
+}
