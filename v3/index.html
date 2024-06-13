@@ -5,115 +5,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EventBooth</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .navbar-brand {
-      font-family: 'Arial', sans-serif;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-
-    .navbar-nav .nav-link {
-      font-weight: bold;
-      color: #333;
-    }
-
-    .hero {
-      position: relative;
-      text-align: center;
-      color: white;
-      background: url('images/hero.jpg') no-repeat center center;
-      background-size: cover;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-
-    .search-bar {
-      margin-top: 20px;
-      background: white;
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    .btn-custom {
-      background-color: #cc0000;
-      color: white;
-    }
-
-    .btn-custom:hover {
-      background-color: #b30000;
-      color: white;
-    }
-
-    .black-bar {
-      background-color: #000;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-    }
-  </style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+<header>
+  <div class="location bg-dark">
+    <div class="container d-flex justify-content-end  h-40">
+      <select class="bg-transparent border-0 text-white">
+        <option selected>Locations</option>
+        <option value="UK">United Kingdom</option>
+        <option value="Ireland">Ireland</option>
+        <option value="USA">USA</option>
+        <option value="Nigeria">Nigeria</option>
+      </select>
+    </div>
+  </div>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">EVENT<span style="color:#800020;">BOOTH</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+  <nav class="navbar navbar-expand-lg navbar-white bg-white">
+    <div class="container d-flex justify-content-between">
+     <div>
+       <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Logo"></a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Planners Hub</a>
+            <a class="nav-link" href="planners-hub.html">Planners Hub</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FAQs</a>
+            <a class="nav-link" href="faqs.html">FAQs</a>
           </li>
         </ul>
-        <a class="btn btn-custom ms-3" href="#">Get Started</a>
       </div>
+      <button class="btn">Get Started</button>
     </div>
   </nav>
 
   <!-- Black Bar -->
-  <div class="black-bar">
-    List your events with the <span style="color:#ff4d4d;">List4Me</span> service option
+  <div class="bg-dark black-bar text-white text-center p-3">
+       List your events with the <span style="color:#C12842;">List4Me</span> service option
   </div>
 
   <!-- Hero Section -->
-  <div class="hero">
+  <!-- <div class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>Unlock the World of Events</h1>
@@ -146,10 +103,16 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</header>
+
+   <!-- 
+    - ionicon link
+  -->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="js/app.js"></script>
 </body>
 
 </html>
