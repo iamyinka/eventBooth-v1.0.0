@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -27,7 +27,7 @@
     </div>
   </div>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-white bg-white">
+  <nav class="navbar navbar-expand-xl navbar-white bg-white">
     <div class="container d-flex justify-content-between">
      <div>
        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Logo"></a>
@@ -63,50 +63,362 @@
       <button class="btn">Get Started</button>
     </div>
   </nav>
-
-  <!-- Black Bar -->
-  <div class="bg-dark black-bar text-white text-center p-3">
-       List your events with the <span style="color:#C12842;">List4Me</span> service option
-  </div>
-
   <!-- Hero Section -->
-  <!-- <div class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Unlock the World of Events</h1>
-      <p>Discover... Attend... Connect...</p>
-      <a class="btn btn-custom btn-lg" href="#">Create an Event</a>
-      <div class="search-bar mt-4 p-3">
-        <form class="row g-3">
-          <div class="col-md-4">
-            <input type="text" class="form-control" placeholder="Find your next event">
-          </div>
-          <div class="col-md-3">
-            <select class="form-select">
-              <option selected>Event Location</option>
-              <option value="1">Location 1</option>
-              <option value="2">Location 2</option>
-              <option value="3">Location 3</option>
-            </select>
-          </div>
-          <div class="col-md-3">
-            <select class="form-select">
-              <option selected>Event Category</option>
-              <option value="1">Category 1</option>
-              <option value="2">Category 2</option>
-              <option value="3">Category 3</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <button type="submit" class="btn btn-custom w-100">Find Event</button>
-          </div>
-        </form>
-      </div>
+  <section id="hero" class="d-flex align-items-center position-relative text-white">
+    <!-- Black Bar -->
+    <div class="bg-dark black-bar text-white text-center p-3 w-100 top-0 position-absolute">
+         List your events with the <span style="color:#C12842;">List4Me</span> service option
     </div>
-  </div> -->
+    <!-- <div class="overlay"></div> -->
+    <div class="container hero-content">
+      <h1>Unlock the World of Events</h1>
+      <p class="my-4">Discover... Attend... Connect...</p>
+      <a href="create-event.html"><button class="btn">Create an Event</button></a>
+    </div>
+  </section>
+  <!-- Search Bar -->
+   <div class="container search-bar">
+     <form class="row align-items-center g-0">
+       <div class="col-md-3 position-relative">
+          <img class="position-absolute" src="images/search.svg" alt="Search Icon">
+         <input type="text" class="form-control" placeholder="Find your next event">
+       </div>
+       <div class="col-md-3 position-relative">
+          <img class="position-absolute" src="images/location.svg" alt="Location Icon">
+         <select class="form-select">
+           <option selected>Event Location</option>
+           <option value="1">Location 1</option>
+           <option value="2">Location 2</option>
+           <option value="3">Location 3</option>
+         </select>
+       </div>
+       <div class="col-md-3 position-relative">
+         <img class="position-absolute" src="images/category.svg" alt="Category Icon">
+         <select class="form-select">
+           <option selected>Event Category</option>
+           <option value="1">Category 1</option>
+           <option value="2">Category 2</option>
+           <option value="3">Category 3</option>
+         </select>
+       </div>
+       <div class="col-md-3">
+        <!-- <img src="images/filter.svg" alt="Filter Icon" class="col-md-5"> -->
+         <button type="submit" class="btn w-90 ms-4">Find Event</button>
+       </div>
+     </form>
+   </div>
 
 </header>
+<section id="event-container" class="container">
+  <i class="mb-3 d-block">Discover Upcoming and Expired Events</i>
+  <div class="category-tabs">
+    <ul>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">All</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tech</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Corporate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Outdoor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Music & Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Art & Crafts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Religion</a>
+      </li>
+    </ul>
+  </div>
 
+<div class="mt-4 mb-5 d-flex justify-content-between">
+  <div class="title">
+      <h3>Upcoming Event</h3>
+      <p>Upcoming events schedule not be missed!</p>
+  </div>
+        <select class="upcoming-select px-3">
+          <option value="January 2024">January 2024</option>
+          <option value="February 2024">February 2024</option>
+          <option value="March 2024">March 2024</option>
+          <option value="April 2024" selected>April 2024</option>
+          <option value="May 2024">May 2024</option>
+          <option value="June 2024">June 2024</option>
+          <option value="July 2024">July 2024</option>
+          <option value="August 2024">August 2024</option>
+          <option value="September 2024">September 2024</option>
+          <option value="October 2024">October 2024</option>
+          <option value="November 2024">November 2024</option>
+          <option value="December 2024">December 2024</option>
+        </select>
+</div>
+
+  <div class="row align-items-center gap-20">
+    <div class="col-lg-7">
+      <a href="event-details.html">
+        <div class="event-card d-flex gap-3">
+          <div class="w-50 d-flex gap-3">
+            <div>
+              <img src="images/event-thumb-img.png" alt="Event Image" class="img-fluid rounded">
+            </div>
+            <div class="col-8 event-details">
+              <div class="location"><img src="images/pin.svg" alt="location">Nottingham Forest</div>
+              <h6>5-aside Futsal</h6>
+              <p>Hosting a 5-aside futsal tournament</p>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="w-50 event-date d-flex gap-5">
+            <div class="date align-self-center">20</div>
+            <div class="align-self-center">
+              <h6>April</h6>
+              <span class="location">Apr 20 - Apr 23</span>
+            </div>
+          </div>
+          <img src="images/arrow-right.svg" alt="Arrow right">
+        </div>
+      </a>
+     <a href="event-details.html">
+       <div class="event-card d-flex gap-3">
+         <div class="w-50 d-flex gap-3">
+           <div>
+             <img src="images/event-thumb-img.png" alt="Event Image" class="img-fluid rounded">
+           </div>
+           <div class="col-8 event-details">
+             <div class="location"><img src="images/pin.svg" alt="location">Nottingham Forest</div>
+             <h6>5-aside Futsal</h6>
+             <p>Hosting a 5-aside futsal tournament</p>
+           </div>
+           <div class="line"></div>
+         </div>
+         <div class="w-50 event-date d-flex gap-5">
+           <div class="date align-self-center">22</div>
+           <div class="align-self-center">
+             <h6>April</h6>
+             <span class="location">8:00 AM - 9:00 PM</span>
+           </div>
+         </div>
+         <img src="images/arrow-right.svg" alt="Arrow right">
+       </div>
+     </a>
+      <a href="event-details.html">
+        <div class="event-card d-flex gap-3">
+          <div class="w-50 d-flex gap-3">
+            <div>
+              <img src="images/event-thumb-img.png" alt="Event Image" class="img-fluid rounded">
+            </div>
+            <div class="col-8 event-details">
+              <div class="location"><img src="images/pin.svg" alt="location">Nottingham Forest</div>
+              <h6>5-aside Futsal</h6>
+              <p>Hosting a 5-aside futsal tournament</p>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="w-50 event-date d-flex gap-5">
+            <div class="date align-self-center">23</div>
+            <div class="align-self-center">
+              <h6>April</h6>
+              <span class="location">May 23 - May 23</span>
+            </div>
+          </div>
+          <img src="images/arrow-right.svg" alt="Arrow right">
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-4">
+      <div class="highlight-card">
+        <img src="images/event-img.png" alt="Highlight Image" class="img-fluid">
+       <div class="content">
+         <div class="location">
+           <img src="images/pin.svg" alt="location"> Nottingham Forest
+         </div>
+         <h6>5-aside Futsal</h6>
+         <p>Get ready to lace up your boots and hit the pitch because we’re hosting a thrilling 5-a-side football tournament event! Calling all football enthusiasts to join us for a day packed with fast-paced action and fierce competition.</p>
+         <div class="d-flex justify-content-between">
+           <div>
+             <div class="location"><img src="images/calendar.svg" alt="calendar"> Apr 20 - Apr 23 </div>
+             <div class="location mt-1"> <img src="images/clock.svg" alt="Clock">
+               8:00 AM - 9:00 PM
+             </div>
+           </div>
+           <button class="btn btn-danger">Attend</button>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="section" class="unleash">
+<div class="container position-relative">
+  <div class="row align-items-center gap-10">
+    <div class="col-lg-7">
+      <div class="title">
+        <h3>Unleash the Power of Seamless Events</h3>
+        <p class="my-3">Made for event planners, to support the creation of <br> extraordinary event-planning experiences.</p>
+      </div>
+      <a href="planners-hub.html" class=" d-block mt-4"><button class="btn">Planners Hub</button></a>
+    </div>
+    <div class="col-lg-5 position-relative">
+      <img src="images/dot.svg" class="position-absolute dot2">
+      <img src="images/seamless.png" alt="Event Center">
+    </div>
+  </div>
+  <img src="images/wave.svg" class="position-absolute wave1">
+  <img src="images/dot.svg" class="position-absolute dot1">
+  <img src="images/dot.svg" class="position-absolute dot3">
+  <img src="images/wave.svg" class="position-absolute wave2">
+</div>
+</section>
+
+    <section id="section" class="what-we-offer">
+      <div class="container">
+        <div class="title text-center">
+          <h3>What we offer</h3>
+        </div>
+        <section class="section service" aria-label="service">
+          <ul class="service-list">
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+
+                <h4 class=" card-title">Event Listing</h4>
+
+                <p class="card-text">
+                  The solution provides a platform to showcase and promote events, allowing organizers
+                  to create
+                  detailed event listings with essential information such as date, time, location,
+                  description, and
+                  images
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <h4 class="card-title">Online Ticket Sales</h4>
+
+                <p class="card-text">
+                  Attendees can easily browse and purchase tickets for events directly through the
+                  online ticketing
+                  system. This eliminates the need for physical ticket sales and provides a convenient
+                  and secure way
+                  for attendees to secure their spots.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="key"></ion-icon>
+                </div>
+
+                <h4 class=" card-title">Event Promotion</h4>
+
+                <p class="card-text">
+                  Event organizers can leverage our marketing tools to promote their events, reach a
+                  wider audience, and
+                  increase ticket sales. This may include features like email marketing, social media
+                  integration,
+                  promotional codes, and referral programs.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="bag"></ion-icon>
+                </div>
+
+                <h4 class=" card-title">Attendee Managemet</h4>
+
+                <p class="card-text">
+                  Our solution provides tools for organizers to manage attendee information, track
+                  registrations, and
+                  generate attendee reports. This streamlines the process of managing guest lists and
+                  facilitates
+                  effective communication with attendees.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="key"></ion-icon>
+                </div>
+
+                <h4 class=" card-title">Event Analytics</h4>
+
+                <p class="card-text">
+                  Organizers can access analytics and reporting features to gain insights into ticket
+                  sales, attendance
+                  trends, and attendee demographics. This data helps organizers measure the success of
+                  their events,
+                  make informed decisions, and improve future event planning strategies.
+                </p>
+
+              </div>
+            </li>
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="home"></ion-icon>
+                </div>
+
+                <h4 class=" card-title">Ticket Customization</h4>
+
+                <p class="card-text">
+                  Event organizers can create different ticket types and pricing options to cater to
+                  various attendee
+                  needs, such as general admission, VIP passes, early bird discounts, group tickets,
+                  or special
+                  packages.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+
+      </div>
+    </section>
+
+<section id="section" class="highlighted-events bg-white">
+<div class="container">
+  <div class="title text-center">
+    <h3>Highlighted Events of the Month</h3>
+  </div>
+</div>
+</section>
    <!-- 
     - ionicon link
   -->
