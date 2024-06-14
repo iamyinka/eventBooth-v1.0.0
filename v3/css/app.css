@@ -1,6 +1,6 @@
 :root {
     --primary-color: #772432;
-    --secondary-color: #363636;
+    --secondary-color: #363636;;
     --heading-color: #1A1A1A;
     --text-color: #808185;
 }
@@ -144,9 +144,9 @@ select option {
     all: unset
 }
 
-.search-bar input:focus,
-.search-bar select:focus,
-.upcoming-select:focus {
+ input:focus,
+ select:focus,
+ .form-control:focus{
     box-shadow: unset;
     border-color: var(--primary-color);
 }
@@ -237,7 +237,7 @@ select option {
     border: 1px solid #DDDEE0;
 }
 
-.upcoming-select:focus-visible {
+input:focus-visible, select:focus-visible {
     outline: none;
 }
 
@@ -357,7 +357,7 @@ select option {
 }
 
 .event h4 {
-    color: #363636;
+    color: var(--secondary-color);
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
@@ -389,7 +389,7 @@ select option {
 .what-we-offer h4 {
     font-size: 16px;
     font-weight: 600;
-    color: #363636;
+    color: var(--secondary-color);
     margin-top: 10px;
     margin-bottom: 18px;
 }
@@ -585,14 +585,14 @@ select option {
 }
 
 #events-page .empty {
-    color: #363636;
+    color: var(--secondary-color);
 }
 
 #events-page .empty h4, .not-empty h4 {
     font-size: 28px;
     font-weight: 600;
     line-height: 42px;
-    color: #363636;
+    color: var(--secondary-color);
 }
 
 #events-page .empty h5 {
@@ -608,7 +608,7 @@ select option {
 }
 
 #events-page .not-empty span {
-        color: #363636;
+        color: var(--secondary-color);
         font-weight: 500;
 }
 
@@ -670,7 +670,7 @@ margin-bottom: 24px;
 padding: 26px 0;
 }
 #event-details-page .date-time-venue div strong{
-color: #363636;
+color: var(--secondary-color);
 }
 #event-details-page .date-time-venue div.border-b{
 border-bottom: 1px solid #EEEEEF;
@@ -684,7 +684,7 @@ border-bottom: 1px solid #EEEEEF;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    color: #363636;
+    color: var(--secondary-color);
 }
 
 #event-details-page .purchase-ticket .dot-b {
@@ -697,7 +697,7 @@ padding: 17px 21px;
 border-radius: 16px;
 }
 #event-details-page .purchase-ticket .ticket-type p{
-color: #363636;
+color: var(--secondary-color);
 font-weight: 600;
 }
 #event-details-page .purchase-ticket .ticket-type span{
@@ -705,7 +705,7 @@ color: var(--primary-color);
 font-weight: 600;
 }
 #event-details-page .purchase-ticket .ticket-type .qty span{
-color: #363636;
+color: var(--secondary-color);
 }
 
 #event-details-page .purchase-ticket h5 {
@@ -725,7 +725,7 @@ margin-top: 16px;
 }
 #event-details-page .total-section span {
     font-weight: 600;
-    color: #363636;
+    color: var(--secondary-color);
 }
 
 .calendar-btns .btn-outline {
@@ -755,3 +755,132 @@ margin-top: 16px;
     line-height: 36px;
 }
 }
+
+/* ATTENDEE DETAILS PAGE */
+#attendee-details-page {
+    padding: 48px 0 181px;
+    color: #67676a;
+}
+#attendee-details-page .back{
+border: 1px solid #CDCDD0;
+height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+   color: #67676a;
+   background: #fff;
+   border-radius: 8px;
+}
+#attendee-details-page .title h4{
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 24px;
+}
+#attendee-details-page .title p{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+}
+#attendee-details-page .box{
+    padding: 40px;
+    border: 1px solid #DDDEE0;
+    border-radius: 20px;
+}
+#attendee-details-page .box .ticket-header{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--primary-color);
+}
+#attendee-details-page h5{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+        color: var(--secondary-color);
+}
+#attendee-details-page .box label{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+        color:#27272a;
+}
+
+#attendee-details-page .box label .req {
+    color: #F96060;
+}
+#attendee-details-page .box input {
+    margin-bottom: 32px;
+    height: 56px;
+}
+#attendee-details-page .box .attendee-form {
+    border-bottom: 1px dotted #DDDEE0;
+}
+#attendee-details-page .product-summary{
+    padding: 33px;
+}
+#attendee-details-page .product-summary .content {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+#attendee-details-page .product-summary .content h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+#attendee-details-page .product-summary .price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--secondary-color);
+}
+#attendee-details-page .product-summary .content p {
+    margin: 0;
+}
+#attendee-details-page .product-summary .content p:last-child {
+    white-space: nowrap;
+}
+#attendee-details-page .product-summary .content span {
+    color: var(--primary-color);
+}
+#attendee-details-page .product-summary .border-b{
+    border-bottom: 1px solid #EEEEEF;
+    padding: 23px;
+}
+#attendee-details-page .product-summary .dot-b{
+    border-bottom: 1px dotted #EEEEEF;
+    padding: 33px;
+    color: #363636;
+}
+#attendee-details-page .product-summary .dot-b div{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+#attendee-details-page .product-summary .dot-b span{
+color: var(--text-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+#attendee-details-page .product-summary input {
+    height: 48px;
+}
+#attendee-details-page .product-summary .btn-coupon{
+background: #F8EAEA;
+    height: 48px;
+    border-radius: 10px;
+    opacity: 0.5px;
+    border: none;
+}
+#attendee-details-page .product-summary .btn{
+height: 56px;
+}
+
+.btn-dark {
+    background: var(--heading-color);
+}
+
