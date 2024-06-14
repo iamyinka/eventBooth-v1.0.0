@@ -157,7 +157,8 @@ select option {
 }
 
 .w-90 {
-    width: 90%;
+    width: 90% !important;
+    margin-top: 10px;
 }
 
 /* EVENT SECTION */
@@ -524,20 +525,18 @@ select option {
     }
 
     .location {
-        font-size: 8.12px;
-        font-weight: 400;
+        font-size: 12px;
         line-height: 12.17px;
     }
 
     h6 {
-        font-size: 11.59px;
-        font-weight: 400;
+        font-size: 14px;
         line-height: 17.39px;
+        margin: 6px 0;
     }
 
     .date {
         font-size: 34.78px;
-        font-weight: 600;
         line-height: 52.17px;
     }
 
@@ -632,4 +631,127 @@ select option {
         font-size: 18px;
         line-height: 25px;
     }
+}
+
+/* EVENT DETAILS PAGE */
+#event-details-hero {
+    background: url('../images/details-hero.png');
+        background-size: cover;
+        background-position: center;
+        height: 252px;
+}
+
+#event-details-page {
+    background: #FAF7F7;
+    padding: 89px 0 64px;
+}
+#event-details-page .box {
+background: #FFFFFF;
+border-radius: 24px;
+}
+#event-details-page .details {
+padding: 28px;
+}
+#event-details-page h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+#event-details-page .details p {
+color: #67676A;
+}
+#event-details-page .info{
+padding: 24px;
+margin-bottom: 24px;
+}
+#event-details-page .date-time-venue div{
+padding: 26px 0;
+}
+#event-details-page .date-time-venue div strong{
+color: #363636;
+}
+#event-details-page .date-time-venue div.border-b{
+border-bottom: 1px solid #EEEEEF;
+}
+#event-details-page .purchase-ticket, #event-details-page .purchase-ticket h5{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+#event-details-page .purchase-ticket h4, .add-to-calendar h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #363636;
+}
+
+#event-details-page .purchase-ticket .dot-b {
+    border-bottom: 1px dotted #ABACB1;
+}
+
+#event-details-page .purchase-ticket .ticket-type{
+background: #FAF7F7;
+padding: 17px 21px;
+border-radius: 16px;
+}
+#event-details-page .purchase-ticket .ticket-type p{
+color: #363636;
+font-weight: 600;
+}
+#event-details-page .purchase-ticket .ticket-type span{
+color: var(--primary-color);
+font-weight: 600;
+}
+#event-details-page .purchase-ticket .ticket-type .qty span{
+color: #363636;
+}
+
+#event-details-page .purchase-ticket h5 {
+    color: #67676a;
+    font-weight: 600;
+}
+#event-details-page .total-section, .calendar-btns {
+border: 1px solid #EEEEEF;
+background: #fff;
+border-radius: 16px;
+padding: 17px 21px;
+margin-top: 16px;
+}
+
+#event-details-page .total-section p {
+    font-weight: 500;
+}
+#event-details-page .total-section span {
+    font-weight: 600;
+    color: #363636;
+}
+
+.calendar-btns .btn-outline {
+    border: 1px solid #EEEEEF;
+    background: transparent;
+    width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        color: #67676a;
+        height: 42px;
+        margin-bottom: 13px;
+        border-radius: 8px;
+}
+
+.calendar-btns .btn-outline:first-child {
+   margin-top: 13px;
+}
+
+.related-events .border-b {
+    border-bottom: 1px solid #DFDFDF;
+}
+
+@media (max-width: 768px) {
+#event-details-page h3 {
+    font-size: 24px;
+    line-height: 36px;
+}
 }
