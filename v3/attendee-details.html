@@ -29,7 +29,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-xl navbar-white bg-white">
       <div class="container d-flex justify-content-between">
-        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Logo"></a>
+        <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/logo.png" alt="Logo"></a>
+        <a class="navbar-brand d-lg-none" href="#"><img src="images/mobile-logo.png" alt="Logo"></a>
         <div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -100,12 +101,12 @@
   </header>
 
   <main id="attendee-details-page">
-      <div class="container">
-        <button class="back"><img src="images/arrow-left.svg" alt="Back"> Back to events</button>
-        <div class="title">
-           <h4>Attendee Details</h4>
-           <p>Kindly enter your attendee(s) details</p>
-        </div>
+    <div class="container">
+      <button class="back"><img src="images/arrow-left.svg" alt="Back"> Back to events</button>
+      <div class="title">
+        <h4>Attendee Details</h4>
+        <p>Kindly enter your attendee(s) details</p>
+      </div>
       <div class="row">
         <!-- Attendee Details Section -->
         <section class="col-lg-7">
@@ -154,23 +155,23 @@
         <aside class="col-lg-5">
           <div class="product-summary box">
             <h5>Product</h5>
-         <div class="d-flex justify-content-between border-b">
-            <div class="d-flex gap-3">
-              <img src="images/event-details-thumb.png" alt="Event  Img" width="90" height="126" class="r-8">
-             <div class="content">
-               <div class="location">
-                 <img src="images/pin.svg" alt="location"> Nottingham Forest
-               </div>
-               <h6>Aerial Dance Photo Sessions with Shinu John</h6>
-               <p><span>Date:</span> Apr 20 - Apr 23</p>
-               <p><span>Time:</span> 8:00 AM - 9:00 PM (Europe/Dublin)</p>
-             </div>
+            <div class="d-flex justify-content-between border-b">
+              <div class="d-flex gap-3">
+                <img src="images/event-details-thumb.png" alt="Event  Img" width="90" height="126" class="r-8">
+                <div class="content">
+                  <div class="location">
+                    <img src="images/pin.svg" alt="location"> Nottingham Forest
+                  </div>
+                  <h6>Aerial Dance Photo Sessions with Shinu John</h6>
+                  <p><span>Date:</span> Apr 20 - Apr 23</p>
+                  <p><span>Time:</span> 8:00 AM - 9:00 PM (Europe/Dublin)</p>
+                </div>
+              </div>
+              <div class="price">€380.00</div>
             </div>
-            <div class="price">€380.00</div>
-         </div>
             <div class="d-flex justify-content-between px-4 dot-b">
-             <p>Quantity</p>
-             <div>1</div>
+              <p>Quantity</p>
+              <div>1</div>
             </div>
             <div class="d-flex justify-content-between px-4 dot-b">
               <p>Subtotal:</p>
@@ -184,12 +185,12 @@
               <input type="text" class="form-control w-50" placeholder="Coupon code">
               <button class="btn-coupon w-50">Apply coupon</button>
             </div>
-           <a href="checkout.html"> <button class="btn w-100">Proceed to checkout</button></a>
+            <a href="checkout.html"> <button class="btn w-100">Proceed to checkout</button></a>
             <button class="btn btn-dark w-100 mt-4">Buy with <img src="images/G.svg"> Pay</button>
           </div>
         </aside>
       </div>
-      </div>
+    </div>
   </main>
 
   <footer class="footer text-white">

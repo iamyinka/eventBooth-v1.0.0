@@ -29,7 +29,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-xl navbar-white bg-white">
       <div class="container d-flex justify-content-between">
-        <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Logo"></a>
+        <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/logo.png" alt="Logo"></a>
+        <a class="navbar-brand d-lg-none" href="#"><img src="images/mobile-logo.png" alt="Logo"></a>
         <div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -128,28 +129,28 @@
           </div>
         </section>
         <aside class="col-lg-9">
-            <div class="box">
-             <form class="contact-form">
-                 <div>
-                   <label for="fullname" class="form-label">Full Name</label>
-                   <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter full name">
-                 </div>
-               <div>
-                 <label for="email" class="form-label">Email Address</label>
-                 <input type="email" name="email" class="form-control" id="email" placeholder="Enter email Address">
-               </div>
-                   <div>
-                     <label for="subject" class="form-label">Subject</label>
-                     <input type="text" name="subject" class="form-control" id="subject" placeholder="Enter subject">
-                   </div>
-               <div>
-                 <label for="note" class="form-label">Message</label> <br>
-                 <textarea name="Notes" id="notes" class="form-control">Enter message
+          <div class="box">
+            <form class="contact-form">
+              <div>
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Enter full name">
+              </div>
+              <div>
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter email Address">
+              </div>
+              <div>
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" name="subject" class="form-control" id="subject" placeholder="Enter subject">
+              </div>
+              <div>
+                <label for="note" class="form-label">Message</label> <br>
+                <textarea name="Notes" id="notes" class="form-control">Enter message
                 </textarea>
-               </div>
-               <button type="submit" class="btn">Submit</button>
-             </form>
-            </div>
+              </div>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
         </aside>
       </section>
     </div>

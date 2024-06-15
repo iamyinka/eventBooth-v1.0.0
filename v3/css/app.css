@@ -488,11 +488,6 @@ h6 {
             font-weight: 600;
             line-height: 48px;
     }
-    nav img {
-        width: 134px;
-        height: 40px;
-        object-fit: cover;
-    }
 }
 
 @media (max-width: 768px) {
