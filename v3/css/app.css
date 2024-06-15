@@ -483,9 +483,23 @@ h6 {
     .gap-20 {
         gap: 70px;
     }
+    h1 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 48px;
+    }
+    nav img {
+        width: 134px;
+        height: 40px;
+        object-fit: cover;
+    }
 }
 
 @media (max-width: 768px) {
+
+    br {
+        display: none;
+    }
 
     .btn {
         width: 159.11px;
@@ -520,7 +534,7 @@ h6 {
         line-height: 36px;
     }
 
-    .title p {
+    #homepage .title p {
         font-size: 16px;
         line-height: 24px;
         text-align: left;
@@ -1044,7 +1058,6 @@ text-align: left !important;
     background: url('../images/contact-hero.png');
     background-size: cover;
     background-position: top;
-    height: 340px;
     padding: 92px 0 104px;
 }
 
@@ -1101,4 +1114,110 @@ border-radius: 56px;
 
 #contact-page .row aside .box form textarea {
     height: 216px;
+}
+
+@media (max-width: 768px) {
+    #contact-hero {
+        background-position: 80%;
+    }
+        #contact-page .row section .box {
+            width: 70%;
+            margin: 0 auto;
+        }
+        #contact-page .row aside .box {
+            padding: 16px;
+        }
+}
+
+/* Planners Hub Page */
+#planners-hero {
+    background: url('../images/planners-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 72px 0;
+}
+.pr-2 {
+    padding-right: 20px;
+}
+#planners-page {
+    padding: 101px 0;
+    color: var(--secondary-color);
+}
+#planners-page .m-150 {
+    margin-top: -150px;
+}
+#planners-page h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46.8px;
+    color: var(--primary-color);
+}
+#planners-page h4 {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 37.4px;
+        border-left: 5px solid #AF3176;
+        margin-bottom: 22px;
+        padding-left: 24px;
+}
+#planners-page h5 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 27.2px;
+        margin-top: 15px;
+}
+#planners-page p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30.6px;
+}
+#planners-page .features-section {
+    padding-top: 101px;
+}
+#planners-page .features-section p {
+        font-size: 16px;
+}
+
+#planners-page .features-section .border-r {
+        border-right: 1px solid #AF3176;
+}
+#planners-page .features-section .col-lg-4 {
+        box-shadow: 0px 2px 15px 0px #0000001A;
+}
+#planners-page .header-section {
+        padding-bottom: 101px;
+}
+#planners-page .main-content-section {
+        padding: 72px 0;
+        background: #FAF7F7;
+}
+
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column-reverse !important;
+        margin-bottom: 70px;
+    }
+
+         #planners-page p {
+            font-size: 16px;
+         }
+
+          #planners-page h3 {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 36.4px;
+            margin: 30px 0 20px;
+    }
+        #planners-page h4 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 30.6px;
+            margin: 56px 0 32px;
+        }
+
+        #planners-page .features-section h3 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 36px;
+        }
 }
