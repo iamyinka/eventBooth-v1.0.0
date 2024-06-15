@@ -1038,3 +1038,67 @@ text-align: left !important;
         line-height: 27px;
     }
 }
+
+/* Contact Page */
+#contact-hero {
+    background: url('../images/contact-hero.png');
+    background-size: cover;
+    background-position: top;
+    height: 340px;
+    padding: 92px 0 104px;
+}
+
+#contact-page {
+    padding: 64px 0 150px;
+}
+#contact-page .row{
+    margin-top: 56px;
+}
+#contact-page .row h4{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+#contact-page .row .box{
+border: 1px solid #EEEEEF;
+background: #FFFFFF;
+box-shadow: 0px 3px 15px 0px #0000000D;
+border-radius: 16px;
+padding: 32px;
+}
+#contact-page .row section .box div{
+border: 1px solid #F5F5F5;
+background: #FFFFFF;
+box-shadow: 0px 1px 5px 0px #0000000D;
+width: 56px;
+height: 56px;
+border-radius: 56px;
+}
+
+#contact-page .row aside .box {
+    padding: 48px;
+}
+#contact-page .row aside .box form div {
+   margin-bottom: 38px;
+}
+#contact-page .row aside .box form label{
+        color: #363636;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+}
+#contact-page .row aside .box form input,
+#contact-page .row aside .box form textarea{
+        background: #F5F5F5;
+        height: 56px;
+        color:  #ABACB1;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+}
+
+#contact-page .row aside .box form textarea {
+    height: 216px;
+}
