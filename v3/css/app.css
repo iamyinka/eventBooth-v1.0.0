@@ -761,6 +761,7 @@ margin-top: 16px;
     padding: 48px 0 181px;
     color: #67676a;
 }
+
 #attendee-details-page .back{
 border: 1px solid #CDCDD0;
 height: 40px;
@@ -801,7 +802,7 @@ height: 40px;
     line-height: 30px;
         color: var(--secondary-color);
 }
-#attendee-details-page .box label{
+#attendee-details-page label{
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -811,9 +812,11 @@ height: 40px;
 #attendee-details-page .box label .req {
     color: #F96060;
 }
-#attendee-details-page .box input {
-    margin-bottom: 32px;
+#attendee-details-page input,
+#attendee-details-page select {
+    margin-bottom: 24px;
     height: 56px;
+    color: #ABACB1;
 }
 #attendee-details-page .box .attendee-form {
     border-bottom: 1px dotted #DDDEE0;
@@ -848,12 +851,15 @@ height: 40px;
 }
 #attendee-details-page .product-summary .border-b{
     border-bottom: 1px solid #EEEEEF;
-    padding: 23px;
+    padding: 23px 0;
 }
 #attendee-details-page .product-summary .dot-b{
     border-bottom: 1px dotted #EEEEEF;
-    padding: 33px;
+    padding: 20px 0;
     color: #363636;
+}
+#attendee-details-page .product-summary .dot-b p {
+    margin: 0;
 }
 #attendee-details-page .product-summary .dot-b div{
     font-size: 16px;
@@ -884,3 +890,40 @@ height: 56px;
     background: var(--heading-color);
 }
 
+
+/* Checkout Page */
+#attendee-details-page .box1 {
+    border: 1px solid #EEEEEF;
+    border-radius: 16px;
+    padding: 6px;
+    margin-bottom: 24px;
+}
+#attendee-details-page .box1 h5{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    margin-left: 21px;
+}
+#attendee-details-page .box1 .btn {
+    border: 1px solid #EEEEEF;
+    background: #F8EAEA;
+    color: var(--secondary-color);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+}
+#attendee-details-page textarea {
+    resize: none;
+    height: 143px;
+    color: #ABACB1;
+}
+
+#attendee-details-page .title .btn {
+    border-radius: 10px;
+    height: 48px;
+}
+
+#attendee-details-page .privacy a{
+    color: var(--primary-color);
+}
