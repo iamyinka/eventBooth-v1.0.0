@@ -483,10 +483,11 @@ h6 {
     .gap-20 {
         gap: 70px;
     }
+
     h1 {
-            font-size: 32px;
-            font-weight: 600;
-            line-height: 48px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 48px;
     }
 }
 
@@ -990,36 +991,40 @@ h6 {
     padding: 118px 0 186px;
 }
 
-#success-page h3{
+#success-page h3 {
     font-size: 30px;
     font-weight: 600;
     line-height: 45px;
     color: var(--secondary-color);
 }
+
 #success-page .box {
     border: 1px solid #CDCDD0;
     border-radius: 16px;
     padding: 75px;
     width: 60%;
 }
-#success-page .box .d-flex{
-border: 1px solid #EEEEEF;
-box-shadow: 0px 1px 10px 0px #0000001A;
-border-radius: 20px;
-padding: 25px 40px;
-text-align: left !important;
+
+#success-page .box .d-flex {
+    border: 1px solid #EEEEEF;
+    box-shadow: 0px 1px 10px 0px #0000001A;
+    border-radius: 20px;
+    padding: 25px 40px;
+    text-align: left !important;
 }
-#success-page .box .d-flex h6{
+
+#success-page .box .d-flex h6 {
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
     color: var(--primary-color);
 }
-#success-page .box p{
+
+#success-page .box p {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-  color: #67676a;
+    color: #67676a;
 }
 
 .r-8 {
@@ -1028,8 +1033,8 @@ text-align: left !important;
 
 @media (max-width: 991px) {
     #success-page h3 {
-    font-size: 20px;
-    line-height: 30px;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     #success-page .box {
@@ -1059,52 +1064,59 @@ text-align: left !important;
 #contact-page {
     padding: 64px 0 150px;
 }
-#contact-page .row{
+
+#contact-page .row {
     margin-top: 56px;
 }
-#contact-page .row h4{
+
+#contact-page .row h4 {
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
     color: var(--primary-color);
     margin-top: 10px;
 }
-#contact-page .row .box{
-border: 1px solid #EEEEEF;
-background: #FFFFFF;
-box-shadow: 0px 3px 15px 0px #0000000D;
-border-radius: 16px;
-padding: 32px;
+
+#contact-page .row .box {
+    border: 1px solid #EEEEEF;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 15px 0px #0000000D;
+    border-radius: 16px;
+    padding: 32px;
 }
-#contact-page .row section .box div{
-border: 1px solid #F5F5F5;
-background: #FFFFFF;
-box-shadow: 0px 1px 5px 0px #0000000D;
-width: 56px;
-height: 56px;
-border-radius: 56px;
+
+#contact-page .row section .box div {
+    border: 1px solid #F5F5F5;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px 0px #0000000D;
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
 }
 
 #contact-page .row aside .box {
     padding: 48px;
 }
+
 #contact-page .row aside .box form div {
-   margin-bottom: 38px;
+    margin-bottom: 38px;
 }
-#contact-page .row aside .box form label{
-        color: #363636;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
+
+#contact-page .row aside .box form label {
+    color: #363636;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
 }
+
 #contact-page .row aside .box form input,
-#contact-page .row aside .box form textarea{
-        background: #F5F5F5;
-        height: 56px;
-        color:  #ABACB1;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 21px;
+#contact-page .row aside .box form textarea {
+    background: #F5F5F5;
+    height: 56px;
+    color: #ABACB1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
 }
 
 #contact-page .row aside .box form textarea {
@@ -1115,13 +1127,15 @@ border-radius: 56px;
     #contact-hero {
         background-position: 80%;
     }
-        #contact-page .row section .box {
-            width: 70%;
-            margin: 0 auto;
-        }
-        #contact-page .row aside .box {
-            padding: 16px;
-        }
+
+    #contact-page .row section .box {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #contact-page .row aside .box {
+        padding: 16px;
+    }
 }
 
 /* Planners Hub Page */
@@ -1131,60 +1145,72 @@ border-radius: 56px;
     background-position: center;
     padding: 72px 0;
 }
+
 .pr-2 {
     padding-right: 20px;
 }
+
 #planners-page {
     padding: 101px 0;
     color: var(--secondary-color);
 }
+
 #planners-page .m-150 {
     margin-top: -150px;
 }
+
 #planners-page h3 {
     font-size: 36px;
     font-weight: 600;
     line-height: 46.8px;
     color: var(--primary-color);
 }
+
 #planners-page h4 {
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 37.4px;
-        border-left: 5px solid #AF3176;
-        margin-bottom: 22px;
-        padding-left: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 37.4px;
+    border-left: 5px solid #AF3176;
+    margin-bottom: 22px;
+    padding-left: 24px;
 }
+
 #planners-page h5 {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 27.2px;
-        margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27.2px;
+    margin-top: 15px;
 }
+
 #planners-page p {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30.6px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.6px;
 }
+
 #planners-page .features-section {
     padding-top: 101px;
 }
+
 #planners-page .features-section p {
-        font-size: 16px;
+    font-size: 16px;
 }
 
 #planners-page .features-section .border-r {
-        border-right: 1px solid #AF3176;
+    border-right: 1px solid #AF3176;
 }
+
 #planners-page .features-section .col-lg-4 {
-        box-shadow: 0px 2px 15px 0px #0000001A;
+    box-shadow: 0px 2px 15px 0px #0000001A;
 }
+
 #planners-page .header-section {
-        padding-bottom: 101px;
+    padding-bottom: 101px;
 }
+
 #planners-page .main-content-section {
-        padding: 72px 0;
-        background: #FAF7F7;
+    padding: 72px 0;
+    background: #FAF7F7;
 }
 
 @media (max-width: 768px) {
@@ -1193,26 +1219,100 @@ border-radius: 56px;
         margin-bottom: 70px;
     }
 
-         #planners-page p {
-            font-size: 16px;
-         }
-
-          #planners-page h3 {
-            font-size: 28px;
-            font-weight: 600;
-            line-height: 36.4px;
-            margin: 30px 0 20px;
+    #planners-page p {
+        font-size: 16px;
     }
-        #planners-page h4 {
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 30.6px;
-            margin: 56px 0 32px;
-        }
 
-        #planners-page .features-section h3 {
-                font-size: 24px;
-                font-weight: 600;
-                line-height: 36px;
+    #planners-page h3 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36.4px;
+        margin: 30px 0 20px;
+    }
+
+    #planners-page h4 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30.6px;
+        margin: 56px 0 32px;
+    }
+
+    #planners-page .features-section h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+}
+
+/* GET STARTED PAGE */
+#get-started-hero {
+    background: url('../images/get-started-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 89px 0 115px;
+}
+
+#get-started-hero .btn {
+    width: unset;
+    font-weight: 500;
+}
+
+#get-started-hero .btn-light {
+    background: #F8EAEA;
+    margin-left: 32px;
+    color: var(--secondary-color);
+}
+
+#get-started-hero a {
+    color: #faf7f7;
+    text-decoration: underline;
+}
+
+#get-started-page {
+    padding: 111px 0 191px;
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+#get-started-page h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46.8px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+#get-started-page ul {
+    padding: 0;
+}
+
+#get-started-page li {
+    margin-bottom: 24px;
+}
+
+#get-started-page .btn {
+    width: 240px;
+}
+
+#get-started-page .btn-outline-danger {
+    background: #F8EAEA;
+    color: var(--primary-color);
+    border: 0;
+    margin-left: 24px;
+}
+
+@media (max-width: 768px) {
+#get-started-page h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.2px;
+    }
+        #get-started-page .btn-outline-danger,
+                #get-started-hero .btn-light {
+            margin-left: unset;
+            margin-top: 15px;
         }
 }
