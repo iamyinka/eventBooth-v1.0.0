@@ -1358,3 +1358,31 @@ background: #F8EAEA;
     background-position: center;
     padding: 74px 0;
 }
+
+/* Terms of Service Page */
+#terms-hero {
+    background: #faf7f7;
+    padding: 95px 0 96px;
+    color: var(--primary-color);
+}
+#terms-page {
+    padding: 100px 0 150px;
+}
+#terms-page ol li{
+    color: #ABACB1 !important;
+}
+#terms-page ol li.active{
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+#terms-page .font-bold {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #1a1a1a;
+}
+#terms-page span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
