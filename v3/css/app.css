@@ -641,9 +641,9 @@ h6 {
         line-height: 30px;
     }
 
-    #events-page .empty p {
-        font-size: 18px;
-        line-height: 25px;
+ p {
+        font-size: 16px !important;
+        line-height: 25px !important;
     }
 }
 
@@ -1014,7 +1014,7 @@ h6 {
 }
 
 #success-page .box .d-flex h6 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     line-height: 36px;
     color: var(--primary-color);
@@ -1159,7 +1159,7 @@ h6 {
     margin-top: -150px;
 }
 
-#planners-page h3 {
+h3 {
     font-size: 36px;
     font-weight: 600;
     line-height: 46.8px;
@@ -1223,10 +1223,13 @@ h6 {
         font-size: 16px;
     }
 
-    #planners-page h3 {
+h3 {
         font-size: 28px;
         font-weight: 600;
         line-height: 36.4px;
+    }
+
+    #planners-page h3 {
         margin: 30px 0 20px;
     }
 
@@ -1305,17 +1308,46 @@ h6 {
 }
 
 @media (max-width: 768px) {
-#get-started-page h3 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 31.2px;
+    #get-started-page h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 31.2px;
     }
-        #get-started-page .btn-outline-danger,
-                #get-started-hero .btn-light {
-            margin-left: unset;
-            margin-top: 15px;
-        }
-                                                #get-started-hero {
-                            background-position: 60%;
-                        }
+
+    #get-started-page .btn-outline-danger,
+    #get-started-hero .btn-light {
+        margin-left: unset;
+        margin-top: 15px;
     }
+
+    #get-started-hero {
+        background-position: 60%;
+    }
+}
+
+/* SERVICES PAGE */
+#services-hero {
+    background: url('../images/services-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 90px 0;
+}
+#services-page {
+    padding-top: 98px;
+}
+
+#services-page section:first-child {
+padding-top: 0 !important;
+}
+#services-page section {
+padding: 115px 0 114px;
+}
+#services-page .bg-pink {
+background: #F8EAEA;
+}
+#services-page p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 26px 0 31px;
+}
