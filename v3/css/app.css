@@ -1386,3 +1386,74 @@ background: #F8EAEA;
     font-weight: 500;
     line-height: 27px;
 }
+
+/* FAQS QUESTIONS */
+#faqs-hero {
+    background: url('../images/faqs-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 134px 0;
+}
+
+#faqs-page {
+    background: #FAF7F7;
+    padding: 100px 0 150px;
+}
+
+#faqs-page .accordion{
+    background: #FFF;
+    padding: 32px;
+    border-radius: 24px;
+    border-radius: 16px;
+}
+
+#faqs-page .accordion .accordion-item {
+    padding: 16px 25px;
+    border: 1px solid #DDDEE0;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+#faqs-page .accordion .accordion-button {
+    border-radius: 16px;
+        font-weight: 600;
+        line-height: 24px;
+}
+
+#faqs-page .accordion .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: unset;
+    color: inherit;
+}
+
+#faqs-page .accordion .accordion-button:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+
+#faqs-page .help-center {
+    color: #363636;
+}
+
+#faqs-page h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 12px;
+        color: var(--primary-color);
+}
+#faqs-page .help-center h4 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: var(--primary-color);
+}
+#faqs-page .help-center a {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+#faqs-page .accordion .accordion-item {
+    padding: unset;
+}
+}
