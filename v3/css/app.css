@@ -172,7 +172,7 @@ select:focus,
     font-weight: 500;
 }
 
-#event-container .category-tabs {
+.category-tabs {
     background: #F9F9F9;
     border-radius: 30px;
     padding: 8px 32px;
@@ -180,7 +180,7 @@ select:focus,
     /* Enable horizontal scrolling */
 }
 
-#event-container .category-tabs ul {
+.category-tabs ul {
     list-style: none;
     display: flex;
     margin: 0;
@@ -190,7 +190,7 @@ select:focus,
     white-space: nowrap;
 }
 
-#event-container .category-tabs ul .nav-item.active {
+.category-tabs ul .nav-item.active {
     background: #000;
     width: auto;
     padding: 10px 20px;
@@ -199,12 +199,12 @@ select:focus,
     text-align: center;
 }
 
-#event-container .category-tabs ul li {
+.category-tabs ul li {
     align-self: center;
     margin-right: 16px;
 }
 
-#event-container .category-tabs ul .nav-item .nav-link {
+.category-tabs ul .nav-item .nav-link {
     display: block;
     padding: 0px 30px;
     border-radius: 100px;
@@ -213,15 +213,15 @@ select:focus,
 }
 
 @media (max-width: 768px) {
-    #event-container .category-tabs ul {
+    .category-tabs ul {
         justify-content: flex-start;
     }
 
-    #event-container .category-tabs ul li {
+    .category-tabs ul li {
         margin-right: 8px;
     }
 
-    #event-container .category-tabs ul .nav-item.active {
+    .category-tabs ul .nav-item.active {
         width: auto;
         padding: 10px 20px;
     }
@@ -490,11 +490,12 @@ h6 {
         line-height: 48px;
     }
 }
-        h1 {
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 72px;
-        }
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+}
 
 @media (max-width: 768px) {
 
@@ -640,7 +641,7 @@ h6 {
         line-height: 30px;
     }
 
- p {
+    p {
         font-size: 16px !important;
         line-height: 25px !important;
     }
@@ -1222,7 +1223,7 @@ h3 {
         font-size: 16px;
     }
 
-h3 {
+    h3 {
         font-size: 24px;
         font-weight: 600;
         line-height: 36.4px;
@@ -1331,19 +1332,23 @@ h3 {
     background-position: center;
     padding: 90px 0;
 }
+
 #services-page {
     padding-top: 98px;
 }
 
 #services-page section:first-child {
-padding-top: 0 !important;
+    padding-top: 0 !important;
 }
+
 #services-page section {
-padding: 115px 0 114px;
+    padding: 115px 0 114px;
 }
+
 #services-page .bg-pink {
-background: #F8EAEA;
+    background: #F8EAEA;
 }
+
 #services-page p {
     font-size: 18px;
     font-weight: 400;
@@ -1365,24 +1370,220 @@ background: #F8EAEA;
     padding: 95px 0 96px;
     color: var(--primary-color);
 }
+
 #terms-page {
     padding: 100px 0 150px;
 }
-#terms-page ol li{
+
+#terms-page ol li {
     color: #ABACB1 !important;
 }
-#terms-page ol li.active{
+
+#terms-page ol li.active {
     color: var(--primary-color) !important;
     font-weight: 600;
 }
+
 #terms-page .font-bold {
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
     color: #1a1a1a;
 }
+
 #terms-page span {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
 }
+
+/* FAQS QUESTIONS */
+#faqs-hero {
+    background: url('../images/faqs-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 134px 0;
+}
+
+#faqs-page {
+    background: #FAF7F7;
+    padding: 100px 0 150px;
+}
+
+#faqs-page .accordion {
+    background: #FFF;
+    padding: 32px;
+    border-radius: 24px;
+    border-radius: 16px;
+}
+
+#faqs-page .accordion .accordion-item {
+    padding: 16px 25px;
+    border: 1px solid #DDDEE0;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+#faqs-page .accordion .accordion-button {
+    border-radius: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+#faqs-page .accordion .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: unset;
+    color: inherit;
+}
+
+#faqs-page .accordion .accordion-button:focus {
+    border-color: unset;
+    box-shadow: unset;
+}
+
+#faqs-page .help-center {
+    color: #363636;
+}
+
+#faqs-page h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+}
+
+#faqs-page .help-center h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--primary-color);
+}
+
+#faqs-page .help-center a {
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    #faqs-page .accordion .accordion-item {
+        padding: unset;
+    }
+}
+
+/* BLOGS */
+#blogs-hero {
+    background: url('../images/blog-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 113px 0;
+}
+
+#blogs-hero p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+#blogs-page {
+    padding-top: 79px;
+}
+#blogs-page .category-tabs{
+    background: transparent;
+}
+
+#blogs-page .search img {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+#blogs-page .search input{
+    height: 56px;
+    border-radius: 8px;
+    background: #F5F5F5;
+    border: 1px solid #DDDEE0;
+    color: #808185;
+    padding-left: 40px;
+}
+
+#blogs-page .date {
+    all: unset;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+}
+
+#blogs-page  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #52525B;
+}
+
+#blogs-page .popular-posts {
+background: #FAF7F7;
+padding: 64px 0;
+}
+#blogs-page .popular-posts .heading {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#blogs-page .popular-posts h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #363636;
+}
+
+#blogs-page .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 47px;
+    margin-top: 4rem;
+}
+
+#blogs-page .posts .post {
+    position: relative;
+    border: 1px solid #eeeeef;
+    background: #fff;
+    box-shadow: 0px 4px 6px -2px #0000000d;
+    border-radius: 8px;
+    height: 410px;
+
+}
+
+#blogs-page .posts .post img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
+
+#blogs-page .posts .post .text {
+    padding: 24px;
+}
+
+#blogs-page .posts .post h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+#blogs-page .posts .post p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #52525b;
+}
+
+.blog-details .py-3 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #646464;
+}
+
