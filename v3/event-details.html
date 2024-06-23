@@ -109,44 +109,44 @@
             <div><img src="images/pin.svg" alt="Location"> <strong>Venue:</strong> Unit 6, Glenview Industrial Estate, Herberton Rd, Rialto, Drimnagh, Dublin, D12 PE0C</div>
           </div>
 
-          <div class="box info purchase-ticket">
-            <h4>Purchase Ticket</h4>
-            <div class="ticket-type">
-              <div class="dot-b  py-2">
-                <span>Gold</span> (10 seats remaining)
+        <div class="box info purchase-ticket">
+          <h4>Purchase Ticket</h4>
+          <div class="ticket-type">
+            <div class="dot-b  py-2">
+              <span>Gold</span> (10 seats remaining)
+            </div>
+            <div class="d-flex justify-content-between py-2 mt-3">
+              <div>
+                <h5>TICKET PRICE :</h5>
+                <p>&euro; 185.00</p>
               </div>
-              <div class="d-flex justify-content-between py-2 mt-3">
-                <div>
-                  <h5>TICKET PRICE :</h5>
-                  <p>&euro; 185.00</p>
+              <div>
+                <h5>QUANTITY:</h5>
+                <div class="qty text-center">
+                  <span role="button" id="decrease-btn">-</span>
+                  <span class="mx-2" id="quantity">1</span>
+                  <span role="button" id="increase-btn">+</span>
                 </div>
-                <div>
-                  <h5>QUANTITY:</h5>
-                  <div class="qty text-center">
-                    <span role="button">-</span>
-                    <span class="mx-2">1</span>
-                    <span role="button">+</span>
-                  </div>
-                </div>
-                <div>
-                  <h5>SUB TOTAL:</h5>
-                  <p>&euro; 185.00</p>
-                </div>
+              </div>
+              <div>
+                <h5>SUB TOTAL:</h5>
+                <p>&euro;<span id="subtotal">185.00</span></p>
               </div>
             </div>
-
-            <div class="total-section mb-4">
-              <div class="d-flex justify-content-between dot-b py-2">
-                <p>Total Quantity</p>
-                <span>3</span>
-              </div>
-              <div class="d-flex justify-content-between py-2">
-                <p>Total Price</p>
-                <span>&euro; 185.00</span>
-              </div>
-            </div>
-            <a href="attendee-details.html"> <button class="btn buy-ticket-btn w-100">Buy Ticket</button></a>
           </div>
+
+          <div class="total-section mb-4">
+            <div class="d-flex justify-content-between dot-b py-2">
+              <p>Total Quantity</p>
+              <span id="total-quantity">1</span>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <p>Total Price</p>
+              <span>&euro;<span id="total-price">185.00</span></span>
+            </div>
+          </div>
+          <a href="attendee-details.html"><button class="btn buy-ticket-btn w-100">Buy Ticket</button></a>
+        </div>
 
           <div class="box info add-to-calendar mt-3">
             <h4>Add To Calendar</h4>
