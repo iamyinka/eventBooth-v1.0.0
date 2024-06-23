@@ -1724,6 +1724,10 @@ width: 180px;
 .auth-form p a {
     color: var(--primary-color);
 }
+.auth-form .option a {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
 
 .auth-form p a:hover {
     text-decoration: underline;
