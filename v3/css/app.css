@@ -1085,7 +1085,7 @@ h1 {
     padding: 32px;
 }
 
-#contact-page section .box div {
+.blog-details #contact-page section .box div {
     border: 1px solid #F5F5F5;
     background: #FFFFFF;
     box-shadow: 0px 1px 5px 0px #0000000D;
@@ -1121,6 +1121,7 @@ h1 {
 
 #contact-page aside .box form textarea {
     height: 216px;
+    resize: none;
 }
 
 @media (max-width: 768px) {
@@ -1468,6 +1469,13 @@ h3 {
     #faqs-page .accordion .accordion-item {
         padding: unset;
     }
+        .auth-form {
+            max-width: 479px;
+            margin-left: 0 !important;
+        }
+        h2 {
+            font-size: 22px !important;
+        }
 }
 
 /* BLOGS and DETAILS*/
@@ -1652,4 +1660,76 @@ width: 180px;
         font-size: 28px;
         font-weight: 600;
         line-height: 42px;
+}
+
+/* REGISTRATION PAGE */
+.left-side img {
+    max-width: 100%;
+    height: auto;
+}
+
+.auth-form {
+    max-width: 479px;
+    margin-left: 284px;
+}
+
+.auth-form h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 39px;
+    margin-bottom: 32px;
+    color: var(--secondary-color);
+}
+
+.auth-form  .form-group {
+    margin-bottom: 32px;
+    position: relative;
+}
+.auth-form  .form-group img {
+    position: absolute;
+    top: 65px;
+    left: 16px;
+}
+.auth-form  .form-group img ~ input {
+    padding-left: 35px;
+}
+
+.auth-form  .form-group label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #27272A;
+}
+
+.auth-form  .form-group input,
+.auth-form  .form-group select {
+    width: 100%;
+    padding: 16px;
+    background: #F5F6FA;
+    border: none;
+    border-radius: 8px;
+}
+
+.auth-form  .form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #67676A;
+}
+
+.auth-form p {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.auth-form p a {
+    color: var(--primary-color);
+}
+.auth-form .option a {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.auth-form p a:hover {
+    text-decoration: underline;
 }
